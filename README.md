@@ -119,14 +119,35 @@ from dynamic_prompting.utils.utils import get_project_root
 ###### Set configs
 
 ```python
+# Select one of the following options, just uncomment one.
+
+# Nomic: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
 emb_config = EmbeddingsConfig(
     model_name="nomic-embed-text-v1.5",
     local_files=True,
     trust_remote_code=True,
     max_dimension=512,
 )
+
+
+# Mxbai: https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1
+
+# emb_config = EmbeddingsConfig(
+#     model_name="mxbai-embed-large-v1",
+#     local_files=True,
+#     trust_remote_code=False,
+#     max_dimension=512,
+# )
+
+
+# BGE : https://huggingface.co/BAAI/bge-small-en-v1.5
+# emb_config = EmbeddingsConfig(
+#     model_name="bge-small-en-v1.5",
+#     local_files=True,
+# )
+
 kb_config = KnowledgeBaseConfig(
-    knowledge_base_name='nomic_signal_classification2')
+    knowledge_base_name='nomic_text_classification')
 
 llm_config = LLMConfig(
     rank=0,
