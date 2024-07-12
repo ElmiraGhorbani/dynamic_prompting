@@ -1,5 +1,9 @@
 # DynamicPrompting
 
+<div style="text-align: center;">
+    <img src="./fewshot-prompting.webp" alt="Example Image" width="500" height="500">
+</div>
+</br>
 Dynamic Few-Shot Prompting is a Python package that dynamically selects N samples that are contextually close to the user's task or query from a knowledge base (similar to RAG) to include in the prompt. This allows the provision of related and informative examples to the LLM without needing to fine-tune the LLM to learn and extract patterns from the dataset. This means lower computation costs and resources; you just need to collect samples that are related to your task and might not be very clear for the LLM.
 
 ## Key Features
