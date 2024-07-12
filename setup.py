@@ -10,7 +10,7 @@ project_urls = {
 
 setup(
     name='dynamic_prompting',
-    version='0.2.5',
+    version='0.2.6',
     author='Elmira Ghorbani',
     description="Dynamic Few-Shot Prompting is a Python package that dynamically selects N samples that are contextually close to the user's task or query from a knowledge base (similar to RAG) to include in the prompt.",
     packages=find_packages(),
