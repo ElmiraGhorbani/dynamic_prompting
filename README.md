@@ -20,7 +20,7 @@ or install from source
 ```
 git clone https://github.com/ElmiraGhorbani/dynamic_prompting
 
-pip install -e
+pip install -e .
 ```
 
 ## Inference

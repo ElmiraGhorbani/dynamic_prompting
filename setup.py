@@ -1,6 +1,4 @@
-# read the contents of your README file
 from pathlib import Path
-
 from setuptools import find_packages, setup
 
 this_directory = Path(__file__).parent
@@ -12,7 +10,7 @@ project_urls = {
 
 setup(
     name='dynamic_prompting',
-    version='0.1.1',
+    version='0.2.3',
     author='Elmira Ghorbani',
     description="Dynamic Few-Shot Prompting is a Python package that dynamically selects N samples that are contextually close to the user's task or query from a knowledge base (similar to RAG) to include in the prompt.",
     packages=find_packages(),
@@ -21,10 +19,8 @@ setup(
         'sentence-transformers==3.0.1',
         'torch==2.2.1',
         'transformers==4.41.1',
-        'llama3'
-    ],
-    dependency_links=[
-        'git+https://github.com/meta-llama/llama3.git#egg=llama3'
+        'meta-llama3==0.0.1',
+        'pandas==2.2.2'
     ],
     project_urls=project_urls,
     long_description=long_description,
